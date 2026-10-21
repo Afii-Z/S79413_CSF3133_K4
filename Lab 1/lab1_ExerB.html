@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Coding Club</title>
+</head>
+<body>
+    <!--
+        Errors found in the original code (line numbers refer to the given code):
+        Error 1 (Line 1): missing <!DOCTYPE html> declaration
+        Error 2 (Line 1): <html> tag missing the lang attribute (lang="en")
+        Error 3 (Line 3): <title> element is never closed (missing </title>)
+        Error 4 (Line 7): <h1> is closed with </h2> (mismatched tags)
+        Error 5 (Line 8): <strong> and <em> are closed in the wrong order (improper nesting)
+        Error 6 (Line 8): <p> is never closed (missing </p>)
+        Error 7 (Line 9): closing tag written as <h2> instead of </h2>
+        Error 8 (Line 10): <ul> is closed with </ol> on Line 14 (mismatched list tags)
+        Error 9 (Line 11): <li> is never closed (missing </li>)
+        Error 10 (Line 15): href value is not quoted
+        Error 11 (Line 15): link has no protocol, so www.umt.edu.my is treated as a relative path (use https://)
+        Error 12 (Line 16): <img> is missing the required alt attribute
+        Error 13 (Line 18): </html> closing tag is missing at the end of the file
+    -->
+ 
+    <!-- Navigation bar: relative links between the two pages. 
+    Home points to this file (lab1_ExerB.html). If you rename it to index.html, change the href. -->
+    <nav>
+        <a href="lab1_ExerB.html">Home</a> | <a href="contact.html">Contact Us</a>
+    </nav>
+ 
+    <!-- Main heading and meeting information -->
+    <h1>Welcome to Campus Coding Club</h1>
+    <p>We meet every <em><strong>Wednesday</strong></em> at BYOD 2.</p>
+ 
+    <!-- Activities section: unordered list -->
+    <h2>Our Activities</h2>
+    <ul>
+        <li>Weekly coding sessions</li>
+        <li>Hackathon</li>
+        <li>Web design workshop</li>
+    </ul>
+ 
+    <!-- Quote from the club advisor -->
+    <blockquote>
+        <p>Coding is best learned by building things together.</p>
+        <footer>&mdash; Club Advisor</footer>
+    </blockquote>
+ 
+    <!-- External link to the university website -->
+    <p>Visit our university: <a href="https://www.umt.edu.my">UMT Website</a></p>
+ 
+    <!-- Club image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3e9K2UIumthbaFGXSTokinHDQCQso3ild_z1IpqINGA&s=10" 
+    alt="The Campus Coding Club">
+ 
+    <!-- Footer / copyright notice -->
+    <p>Copyright (c) 2026 Campus Coding Club &amp; Friends</p>
+    </body>
+</html>
