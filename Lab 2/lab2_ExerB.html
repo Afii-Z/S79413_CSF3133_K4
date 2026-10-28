@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+    <!-- Replaces the obsolete border="1" attribute (Error 3) so the W3C validator shows no warnings -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    ERRORS FOUND IN THE GIVEN CODE (line numbers refer to the original given code):
+    Error 1 (Line 10): the header element was closed with the wrong tag. It used the head end tag instead of the header end tag.
+    Error 2 (Line 16): the border attribute on the table is obsolete and gives a validator warning. Replaced with CSS in the head.
+    Error 3 (Line 20): the Rating heading used a td cell. It must be a th header cell like Week and Topic.
+    Error 4 (Line 25): the row for Week 1 was never closed. The tr end tag is missing before the tr on line 26.
+    Error 5 (Line 28): colspan of 3 on the Topic cell broke the table and the Rating cell was missing. Removed colspan and added a rating cell.
+    Error 6 (Line 32): the Topic td was not closed. The first td needs its own end tag.
+    Error 7 (Line 39): the label for attribute was "name" but the input id is "fullname". Changed for to "fullname".
+    Error 8 (Lines 42 and 44): the radio buttons had different name values (good and poor), so both could be selected. They now share name "rating".
+    Error 9 (Line 47): the label for attribute was "labs" but the checkbox id is "lab". Changed for to "lab".
+    Error 10 (Line 49): the form was closed with a misspelt tag. It must be the form end tag.
+    Error 11 (Line 52): the copyright entity was missing its semicolon. It must be the copy entity ending with a semicolon.
+    -->
+
+    <!-- HEADER -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <!-- SECTION: FEEDBACK SUMMARY TABLE -->
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table>
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tables and Forms</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+            <!-- Weeks 4 and 5 share one Topic cell using rowspan -->
+            <tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>4.5</td>
+            </tr>
+            <!-- New final row: "Average Rating" label spans the first two columns using colspan -->
+            <tr>
+                <td colspan="2">Average Rating</td>
+                <td>4.3</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ===== SECTION: FEEDBACK FORM ===== -->
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+
+            <!-- Name input with matching label -->
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="name"><br>
+
+            <!-- New: E-mail input with matching label -->
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email"><br>
+
+            <!-- RADIA BUTTONS -->
+            <p>Overall rating:</p>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br>
+
+            <!-- CHECKBOX -->
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br>
+
+            <!-- CHECKBOXES -->
+            <p>
+                Topics I want more practice on:<br>
+                <input type="checkbox" id="topic1" name="topics" value="tables">
+                <label for="topic1">Tables</label><br>
+                <input type="checkbox" id="topic2" name="topics" value="forms">
+                <label for="topic2">Forms</label><br>
+                <input type="checkbox" id="topic3" name="topics" value="semantic">
+                <label for="topic3">Semantic HTML</label>
+            </p>
+
+            <!-- DROP-DOWN LIST -->
+            <p>
+                <label for="group">Section/Group:</label>
+                <select id="group" name="group">
+                    <option value="a">Section A</option>
+                    <option value="b">Section B</option>
+                    <option value="c">Section C</option>
+                </select>
+            </p>
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- NEW SECTION: STUDENT COMMENTS -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+
+        <!-- Article 1: first student comment -->
+        <article>
+            <h3>Aisyah</h3>
+            <p>The tables and forms lessons were clear and the lab exercises helped me a lot.</p>
+        </article>
+
+        <!-- Article 2: second student comment -->
+        <article>
+            <h3>Daniel</h3>
+            <p>I enjoyed the mini project, but I would like more practice with semantic HTML.</p>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+</body>
+</html>
