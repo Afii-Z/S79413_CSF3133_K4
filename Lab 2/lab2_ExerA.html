@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Melor Fun Run 2026</title>
+</head>
+<body>
+    <!-- HEADER: Event Name -->
+    <header>
+        <h1>Faculty Fun Run 2026</h1>
+        <p>Run Together & Stay Healthy!</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About Us!</a> | 
+        <a href="#schedule">Run Schedule</a> | 
+        <a href="#register">Register Now</a>
+    </nav>
+
+    <hr>
+
+    <!-- SECTION 1: About -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>
+            Faculty Fun Run is a one-day running event open to all students.<br> 
+            Date : Sunday, 1 November 2026<br>
+            There are many category for you!
+        </p>
+
+        <!-- Article 1: 5KM -->
+        <article>
+            <h3>5 KM Fun Run</h3>
+            <p>
+                A relaxed 5-kilometre run around the lake garden, perfect for
+                beginners and anyone who wants to enjoy the morning with friends.
+            </p>
+        </article>
+
+        <!-- Article 2: 10KM -->
+        <article>
+            <h3>10 KM Challenge Run</h3>
+            <p>
+                A 10-kilometre run for more experienced runners who want to test
+                their stamina and compete for the top prizes.
+            </p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: Event Schedule -->
+    <section id="schedule">
+        <h2>Run Schedule</h2>
+
+        <!-- Schedule table -->
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>6:30 AM</td>
+                <td>Registration and Check-in</td>
+                <td>Stadium Main Gate</td>
+                <td style="text-align:center;">Mr. Afi</td>
+            </tr>
+            <tr>
+                <td>7:00 AM</td>
+                <td>Group Warm-up</td>
+                <td>Stadium Field</td>
+                <td style="text-align:center;">Mr. Tam</td>
+            </tr>
+            <tr>
+                <td>7:30 AM</td>
+                <td>5KM Fun Run</td>
+                <td rowspan="2">Lake Garden Track</td>
+                <td style="text-align:center;">Ms. Ainul</td>
+            </tr>
+            <tr>
+                <td>8:00 AM</td>
+                <td>10K Challenge Run</td>
+                <td style="text-align:center;">Mr. Ahmad</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Cool-down and Stretching</td>
+                <td>Stadium Field</td>
+                <td style="text-align:center;">Coach Afif</td>
+            </tr>
+            <tr>
+                <td>12:00 PM</td>
+                <td colspan="3" style="text-align:center;">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td>Prize Giving Ceremony</td>
+                <td>Stadium Hall</td>
+                <td style="text-align:center;">Prof. Aid</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: Register -->
+    <section id="register">
+        <h2>Registration</h2>
+
+        <form action="register.html" method="post">
+            <!-- Text Input -->
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+            </p>
+            <p>
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email">
+            </p>
+            <!-- Radio Button -->
+            <p>
+                Year of Study:<br>
+                <input type="radio" id="year1" name="year" value="1">
+                <label for="year1">Year 1</label>
+                <input type="radio" id="year2" name="year" value="2">
+                <label for="year2">Year 2</label>
+                <input type="radio" id="year3" name="year" value="3">
+                <label for="year3">Year 3</label>
+                <input type="radio" id="year4" name="year" value="4">
+                <label for="year4">Year 4</label>
+            </p>
+            <!-- Checkboxes -->
+            <p>
+                Sessions to Join:<br>
+                <input type="checkbox" id="s1" name="sessions" value="5k">
+                <label for="s1">5K Fun Run</label><br>
+                <input type="checkbox" id="s2" name="sessions" value="10k">
+                <label for="s2">10K Challenge Run</label><br>
+                <input type="checkbox" id="s3" name="sessions" value="warmup">
+                <label for="s3">Group Warm-up and Cool-down</label>
+            </p>
+            <!-- Drop-down List -->
+            <p>
+                <label for="faculty">Programme / Faculty:</label>
+                <select id="faculty" name="faculty">
+                    <option value="computing">Faculty of Computing</option>
+                    <option value="engineering">Faculty of Engineering</option>
+                    <option value="business">Faculty of Business</option>
+                    <option value="science">Faculty of Science</option>
+                    <option value="arts">Faculty of Arts</option>
+                </select>
+            </p>
+            <!-- Submit Button -->
+             <!-- Submit button -->
+            <p>
+                <input type="submit" value="Register Now" href="register.html">
+            </p>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Organised by the Faculty Student Committee</p>
+        <p>&copy; 2026 Faculty Student Committee. All rights reserved.</p>
+    </footer>
+</body>
+</html>
