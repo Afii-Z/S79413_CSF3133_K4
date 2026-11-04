@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CineKampus Ticket Booking</title>
+</head>
+<body>
+
+    <!-- ERROR LIST AND CORRECTIONS
+    Error 1 (Line 1): DOCTYPE was incomplete.
+    Error 2 (Line 9): Incorrect h1 and span nesting.
+    Error 3 (Line 11): Content used span instead of div.
+    Error 4 (Line 13): HTML entity &amp was missing semicolon.
+    Error 5 (Line 14): Ticket calculation joined strings instead of adding numbers.
+    Error 6 (Line 18): Email validation needed correct type and required.
+    Error 7 (Lines 22-23): Input list and datalist ID did not match.
+    Error 8 (Lines 28-30): Ticket inputs were missing min="0".
+    Error 9 (Line 31): Range slider had reversed min and max.
+    Error 10 (Line 33): Output referenced incorrect child ID (kid).
+    Error 11 (Lines 41-55): Closing body and html tags were incorrect.
+    -->
+
+    <!-- Header Section -->
+    <div id="header">
+
+        <h1>CineKampus
+            <span>Your Campus Cinema</span>
+        </h1>
+
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+
+        <a href="#header">Home</a> |
+        <a href="#content">Booking</a> |
+        <a href="#sidebar">Movies</a> |
+        <a href="#footer">Contact</a>
+
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+
+        <p>
+            Promotion: tickets &lt; RM10 for students
+            &amp; staff!
+        </p>
+
+        <!-- Booking Form -->
+        <form action="booking.php" method="post"
+        oninput="
+        this.elements.total.value =
+        Number(this.elements.adult.value) +
+        Number(this.elements.child.value);
+
+        this.elements.price.value =
+        Number(this.elements.adult.value) * 12 +
+        Number(this.elements.child.value) * 8;"
+        >
+
+            <!-- Customer Information -->
+            <h3>Customer Information</h3>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+            placeholder="Enter your name"
+            required autofocus>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+            placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="Enter phone number" required>
+            <br><br>
+
+            <label for="time">Show Time:</label>
+            <input type="time" id="time" name="showTime">
+            <br><br>
+
+            <label for="date">Show Date:</label>
+            <input type="date" id="date" name="showDate">
+            <br><br>
+
+            <!-- Movie Selection -->
+            <h3>Select Your Movie</h3>
+
+            <label for="movie">Movie:</label>
+            <input type="text" id="movie" name="movie"
+            list="movies">
+
+            <datalist id="movies">
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+                <option value="The Last Hero">
+                <option value="Campus Love">
+            </datalist>
+            <br><br>
+
+            <!-- Ticket Quantity -->
+            <h3>Ticket Quantity</h3>
+
+            <label for="adult">Adult Tickets (RM10):</label>
+            <input type="number" id="adult" name="adult" min="0" value="0">
+            <br><br>
+
+            <label for="child">Child Tickets (RM5):</label>
+            <input type="number" id="child" name="child" min="0" value="0">
+            <br><br>
+
+            <!-- Service Rating -->
+            <label for="rating">Rate Our Service:</label>
+            <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="3">
+            <br><br>
+
+            <!-- Booking Summary -->
+            <h3>Booking Summary</h3>
+
+            Total Tickets:
+            <output name="total" for="adult child">0</output>
+            <br><br>
+
+            Total Price: RM
+            <output name="price" for="adult child">0</output>
+            <br><br>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+
+        <h2>Now Showing</h2>
+
+        <ul>
+            <li>
+                <strong>Space Rangers</strong>
+                <span> (PG)</span>
+                <a href="https://www.youtube.com/results?search_query=Space+Rangers+movie+trailer">Watch Trailer</a>
+            </li>
+
+            <li>
+                <strong>Kampung Comedy</strong>
+                <span> (P13)</span>
+                <a href="https://www.youtube.com/results?search_query=Kampung+Comedy+movie+trailer">Watch Trailer</a>
+            </li>
+
+            <li>
+                <strong>The Last Hero</strong>
+                <span> (P13)</span>
+                <a href="https://www.youtube.com/results?search_query=The+Last+Hero+movie+trailer">Watch Trailer</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <h3>Contact CineKampus</h3>
+
+        <p>
+            e-Ticket&reg; - Campus Cinema
+            &lt; RM10 every Tuesday &amp;
+        </p>
+
+        <p>All rights reserved &copy; 2026</p>
+    </div>
+</body>
+</html>
