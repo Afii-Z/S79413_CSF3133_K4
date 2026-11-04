@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttercup Bakery</title>
+</head>
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <h1>Buttercup Bakery |
+            <span>Happiness in Every Bite!</span>
+        </h1>
+        <p>Welcome to our bakery campus.</p>
+    </div>
+
+    <!-- Navigation section -->
+    <div id="nav">
+        <a href="#header">Home</a> | 
+        <a href="#content">Order Here</a> | 
+        <a href="#sidebar">Price List</a> | 
+        <a href="#footer">Contact Us</a>
+    </div>
+    <hr>
+
+    <!-- Content section -->
+    <div id="content">
+        <h2>About Our Bakery</h2>
+
+        <p>
+            Welcome to <strong>Buttercup Bakery</strong>!
+            We provide <em>fresh and delicious</em> cupcakes
+            and cake slices for students.
+            Enjoy our <span>homemade desserts</span> every day!
+        </p>
+        <hr>
+
+        <h2>Place Your Order</h2>
+
+        <form action="#" method="get"
+        oninput="this.elements.totalPrice.value = (this.elements.cupcakes.value * 3 +
+        this.elements.cakeSlices.value * 5).toFixed(2)">
+            
+            <!-- Customer Information -->
+            <h3>Customer Information</h3>
+
+            <label>Customer Name:</label>
+            <input type="text" name="customerName" placeholder="Enter your name"
+            required autofocus>
+            <br><br>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone"
+            placeholder="Enter phone number" required>
+            <br><br>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Pickup Details -->
+            <h3>Pick-up Details</h3>
+
+            <label>Pick-up Date:</label>
+            <input type="date" name="pickupDate">
+            <br><br>
+
+            <label>Pick-up Time:</label>
+            <input type="time" name="pickupTime">
+            <br><br>
+
+            <!-- Flavour selection -->
+            <h3>Choose Your Flavour</h3>
+
+            <label>Flavour:</label>
+            <input type="text" name="flavour" list="flavours" placeholder="Choose flavour">
+
+            <datalist id="flavours">
+                <option value="Chocolate">
+                <option value="Vanilla">
+                <option value="Strawberry">
+                <option value="Red Velvet">
+                <option value="Oreo">
+            </datalist>
+            <br><br>
+
+            <!-- Icing & Sweetness -->
+            <label>Icing Colour:</label>
+            <input type="color" name="icingColour">
+            <br><br>
+
+            <label>Sweetness Level (1-5):</label>
+            <input type="range" name="sweetness" min="1" max="5" step="1" value="3">
+            <br><br>
+
+            <!-- Quantity & Calculator -->
+            <h3>Order Quantity</h3>
+
+            <label>Cupcakes (RM 3.00 each):</label>
+            <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+            <br><br>
+
+            <label>Cake Slices (RM 5.00 each):</label>
+            <input type="number" id="cakeSlices" name="cakeSlices" min="0" value="0">
+            <br><br>
+
+            <h3>Total Price</h3>
+
+            RM <output name="totalPrice"
+            for="cupcakes cakeSlices">0.00</output>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+    <hr>
+
+    <!-- Sidebar section -->
+    <div id="sidebar">
+        <h2>Price List</h2>
+
+        <h3>Cupcakes - RM 3.00</h3>
+        <ul>
+            <li>Chocolate Cupcake</li>
+            <li>Vanilla Cupcake</li>
+            <li>Strawberry Cupcake</li>
+            <li>Red Velvet Cupcake</li>
+            <li>Oreo Cupcake</li>
+        </ul>
+
+        <h3>Cake Slices - RM 5.00</h3>
+        <ul>
+            <li>Chocolate Cake</li>
+            <li>Cheese Cake</li>
+            <li>Oreo Cake</li>
+            <li>Red Velvet Cake</li>
+            <li>Vanilla Cake</li>
+        </ul>
+
+        <p>Orders &gt;10 pieces get a free drink!</p>
+    </div>
+    <hr>
+    
+    <!-- Footer section -->
+    <div id="footer">
+        <h3>Contact Us</h3>
+
+        <p>Buttercup Bakery&reg; &copy; 2026</p>
+
+        <p>Freshly baked with love!</p>
+
+        <p>
+            Thank you&nbsp;for visiting Buttercup Bakery.&euro; 
+        </p>
+    </div>
+</body>
+</html>
+<!-- 
+Testing:
+
+1. When submitting the form with all fields empty,
+   the browser displays a validation message because
+   required fields are empty.
+
+2. When entering "myemail" in the email field,
+   the browser displays an error because it is not
+   a valid email format.
+-->
