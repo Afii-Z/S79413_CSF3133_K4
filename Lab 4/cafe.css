@@ -1,0 +1,296 @@
+/* 1. GENERAL STYLING */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8EF;
+    color: #333333;
+}
+
+h2 {
+    color: #6F4E37;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* 2. HEADER STYLING */
+
+header {
+    background-color: #C49A6C;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: white;
+    text-decoration: overline;
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* 3. NAVIGATION BAR STYLING */
+
+nav {
+    background-color: #6F4E37;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+/* Navigation Links */
+
+nav a {
+    display: inline-block;
+    color: white;
+    background-color: #6F4E37;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Four Interactive Link States */
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #F5DEB3;
+}
+
+nav a:hover {
+    background-color: #C49A6C;
+    color: white;
+}
+
+nav a:active {
+    background-color: #3E2723;
+    color: white;
+}
+
+
+/* 4. MENU SECTION STYLING */
+
+#menu {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+/* Menu Item Cards */
+
+.menu-item {
+    background-color: white;
+    border: 2px solid #C49A6C;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.menu-item h3 {
+    color: #6F4E37;
+    text-decoration: underline;
+}
+
+.menu-item p {
+    line-height: 1.6;
+}
+
+
+/* Promotion Prices */
+
+.price {
+    font-size: 17px;
+}
+
+.old-price {
+    color: #C0392B;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.highlight {
+    color: #C0392B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* 5. VIDEO SECTION STYLING */
+
+#video {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+    text-align: center;
+}
+
+#video figure {
+    margin: 20px auto;
+}
+
+#video video {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: 3px solid #6F4E37;
+    border-radius: 10px;
+}
+
+#video figcaption {
+    color: #6F4E37;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+
+/* 6. FEEDBACK SECTION STYLING */
+
+#feedback {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+/* Feedback Form */
+
+.feedback-form {
+    background-color: #FDEBD0;
+    border: 2px solid #C49A6C;
+    border-radius: 10px;
+    padding: 25px;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.feedback-form label {
+    font-weight: bold;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px;
+    border: 1px solid #A1887F;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form input[type="radio"],
+.feedback-form input[type="checkbox"] {
+    margin: 10px 5px 10px 0;
+}
+
+.feedback-form p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Submit Button */
+
+.feedback-form button {
+    background-color: #6F4E37;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.feedback-form button:hover {
+    background-color: #C49A6C;
+}
+
+
+/* 7. FOOTER STYLING */
+
+footer {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer a {
+    color: #F5DEB3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* 8. RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    /* Responsive Navigation */
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    /* Responsive Menu */
+    #menu {
+        width: 95%;
+    }
+
+    /* Responsive Video */
+    #video video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Responsive Feedback Form */
+    .feedback-form {
+        width: 100%;
+    }
+
+    /* Responsive Headings */
+    header h1 {
+        font-size: 25px;
+    }
+
+}
