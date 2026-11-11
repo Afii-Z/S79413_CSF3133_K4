@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Tasik Kenyir</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>VISIT TASIK KENYIR</h1>
+        <p>Discover the Beauty of Nature</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destionations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Explore the Beauty of Tasik Kenyir</h2>
+
+            <p>
+                Discover the beauty of Malaysia's largest man-made lake.
+                Enjoy the breathtaking scenery, explore amazing caves 
+                and experience beautiful waterfalls in Terengganu.
+            </p>
+
+            <a href="#destinations" class="btn"> Explore Destionations</a>
+        </div>
+    </section>
+
+    <section id="destionations">
+        <h2 class="center">Our Popular Destinations</h2>
+
+        <div class="destination-container">
+
+            <!-- Destonation 1 -->
+            <article class="card">
+                <img src="kenyir.jpg" alt="Tasik Kenyir">
+                <h3>Tasik Kenyir</h3>
+                <p>
+                    Tasik Kenyir is the largest man-made lake in the Southest Asia.
+                    Visitors can enjoy boat rides, fishing and beautiful scenery.
+                </p>
+                <p class="price">
+                    <span class="old-price">RM 299</span>
+                    <strong>RM 199</strong>
+                </p>
+            </article>
+
+            <!-- Destination 2 -->
+            <article class="card">
+                <img src="gua-bewah.jpg" alt="Gua Bewah">
+                <h3>Gua Bewah</h3>
+                <p>
+                    Gua Bewah is a limestone cave with
+                    historical and archaeological importance.
+                    It is a great place for cave exploration.
+                </p>
+                <p class="price">
+                    <span class="old-price">RM 199</span>
+                    <strong>RM 149</strong>
+                </p>
+            </article>
+
+            <!-- Destination 3 -->
+            <article class="card">
+                <img src="lasir.jpg" alt="Air Terjun Lasir">
+                <h3>Air Terjun Lasir</h3>
+                <p>
+                    Air Terjun Lasir offers beautiful
+                    waterfalls and refreshing natural
+                    surroundings. It is perfect for nature lovers.
+                </p>
+                <p class="price">
+                    <span class="old-price">RM 150</span>
+                    <strong>RM 99</strong>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2 class="center">Explore Tasik Kenyir</h2>
+
+        <figure class="video-container">
+            <video width="600" height="340" controls>
+                <source src="kenyir.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Discover the beautiful scenery and attractions
+                of Tasik Kenyir, Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Section -->
+    <section id="trip">
+
+        <h2 class="center">Book Your Tasik Kenyir Trip</h2>
+
+        <div class="trip-form">
+
+            <h3>Tour Registration Form</h3>
+
+            <!-- Trip Seats Meter -->
+            <label>Available Trip Seats:</label>
+            <meter min="0" max="40" value="19"></meter>
+            <p>19 out of 40 seats have been filled.</p>
+
+            <form action="#" method="post">
+
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name"
+                name="name" placeholder="Enter your name" required>
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email"
+                name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <!-- Traveller Type -->
+                <label>Traveller Type:</label><br>
+
+                <input type="radio" id="student"
+                name="traveller" value="Student">
+                <label for="student">Student</label>
+
+                <input type="radio" id="staff"
+                name="traveller" value="Staff">
+                <label for="staff">Staff</label>
+
+                <input type="radio" id="public"
+                name="traveller" value="Public">
+                <label for="public">Public</label>
+                <br><br>
+
+                <!-- Interests -->
+                <label>Choose Your Interests:</label><br>
+
+                <input type="checkbox" id="islands"
+                name="interests" value="Islands">
+                <label for="islands">Islands</label>
+
+                <input type="checkbox" id="food"
+                name="interests" value="Food">
+                <label for="food">Food</label>
+
+                <input type="checkbox" id="culture"
+                name="interests" value="Culture">
+                <label for="culture">Culture</label>
+
+                <input type="checkbox" id="nature"
+                name="interests" value="Nature">
+                <label for="nature">Nature</label>
+                <br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <h3>VISIT TASIK KENYIR</h3>
+
+        <p>Discover Nature, Explore Adventure.</p>
+
+        <p>
+            Contact us:
+            <a href="mailto:visitkenyir@gmail.com">
+                visitkenyir@gmail.com
+            </a>
+        </p>
+
+        <p>
+            &copy; 2026 Visit Tasik Kenyir.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>

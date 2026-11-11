@@ -1,0 +1,375 @@
+/* 1. GENERAL STYLING */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+    color: #263238;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+
+
+/* 2. HEADER STYLING */
+
+header {
+    background-color: #145C45;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 5px;
+    text-decoration: overline;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+/* 3. NAVIGATION BAR */
+
+nav {
+    background-color: #123D32;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navigation Link States */
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #D6EEE4;
+}
+
+nav a:hover {
+    background-color: #42A77B;
+    color: white;
+}
+
+nav a:active {
+    background-color: #D6EEE4;
+    color: #123D32;
+}
+
+
+/* 4. HOME SECTION */
+
+#home {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.hero {
+    background-color: #D6EEE4;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 15px;
+}
+
+.hero h2 {
+    color: #145C45;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.hero p {
+    color: #263238;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* Explore Button */
+
+.btn {
+    display: inline-block;
+    background-color: #145C45;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Button Link States */
+
+.btn:link {
+    color: white;
+}
+
+.btn:visited {
+    color: #D6EEE4;
+}
+
+.btn:hover {
+    background-color: #42A77B;
+    color: white;
+}
+
+.btn:active {
+    background-color: #123D32;
+    color: white;
+}
+
+
+/* 5. DESTINATIONS SECTION */
+
+#destinations {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.center {
+    text-align: center;
+    color: #145C45;
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+
+/* Destination Cards */
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #145C45;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #145C45;
+    text-decoration: underline;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* Promotion Prices */
+
+.price {
+    font-size: 20px;
+}
+
+.old-price {
+    color: #C62828;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.price strong {
+    color: #145C45;
+}
+
+
+/* 6. VIDEO SECTION */
+
+#video {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.video-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #145C45;
+    border-radius: 10px;
+}
+
+.video-container figcaption {
+    color: #555555;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/* 7. TRIP SECTION */
+
+#trip {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+/* Trip Registration Form */
+
+.trip-form {
+    background-color: #D6EEE4;
+    padding: 25px;
+    border: 2px solid #145C45;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.trip-form h3 {
+    text-align: center;
+    color: #145C45;
+}
+
+.trip-form label {
+    font-weight: bold;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.trip-form meter {
+    width: 100%;
+    height: 20px;
+}
+
+.trip-form button {
+    background-color: #145C45;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.trip-form button:hover {
+    background-color: #42A77B;
+}
+
+
+/* 8. FOOTER SECTION */
+
+footer {
+    background-color: #123D32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer h3 {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a {
+    color: #90EE90;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* 9. RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation */
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    /* Destination Cards */
+    .destination-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%;
+        box-sizing: border-box;
+    }
+
+    /* Trip Form */
+    .trip-form {
+        width: 85%;
+        box-sizing: border-box;
+    }
+
+    /* Home Section */
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* Video */
+    .video-container video {
+        width: 100%;
+        height: auto;
+    }
+
+}
