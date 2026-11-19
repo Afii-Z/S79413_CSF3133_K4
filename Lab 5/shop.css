@@ -1,0 +1,128 @@
+/* General */
+body { 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #F5F5F5; 
+    color: #333; 
+}
+
+/* Header */
+header { 
+    background-image: url("books.jpg"); 
+    background-size: cover; 
+    background-position: right top; 
+    background-repeat: no-repeat; 
+    text-align: center; 
+    color: white; 
+    padding: 40px 20px; 
+}
+
+header h1 { 
+    font-family: 'Merriweather', serif; 
+    font-size: 32px; 
+    margin: 10px 0; 
+    color: white; 
+}
+
+header p { 
+    font-size: 15px; 
+    margin: 10px 0; 
+}
+
+/* Navigation Bar */
+nav { 
+    background-color: #333; 
+    overflow: hidden; 
+}
+
+nav ul { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+nav li {
+    float: left; 
+}
+
+nav li a { 
+    display: block; 
+    color: white; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+nav li a:hover { 
+    background-color: #111; 
+}
+
+nav li a.active { 
+    background-color: #4CAF50; 
+    color: white; 
+}
+
+/* Content */
+main { 
+    width: 90%; 
+    max-width: 980px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: white; 
+}
+
+h2 { 
+    font-family: 'Merriweather', serif; 
+    color: #1B4F72; 
+    border-left: 5px solid #E67E22; 
+    padding-left: 10px; 
+}
+
+section p { 
+    line-height: 1.6; 
+    text-align: justify; 
+    font-size: 15px; 
+}
+
+#products { 
+    border-collapse: collapse; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+#products td, 
+#products th { 
+    border: 1px solid #ddd; 
+    padding: 12px 8px; 
+}
+
+#products th { 
+    background-color: #04AA6D; 
+    color: white; 
+    text-transform: uppercase; 
+    text-align: center; 
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+}
+
+#products tr:nth-child(even) { 
+    background-color: #F2F2F2; 
+}
+
+#products tr:hover { 
+    background-color: #ddd; 
+}
+
+#products td:last-child { 
+    text-align: right; 
+}
+
+footer { 
+    background-color: #f1f1f1; 
+    color: #333; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 20px; 
+    font-size: 14px; 
+}

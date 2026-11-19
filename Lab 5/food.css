@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FBF7F0;
+}
+
+/* Header */
+header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2C2C2C;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #E67E22;
+}
+
+nav a.active {
+    background-color: #E67E22;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Stalls and Menu Table */
+#food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#food-table th,
+#good table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#food-table th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+}
+
+#food-table tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#food-table tr:hover {
+    background-color: #FDEBD0;
+}
+
+#food-table td:last-child {
+    text-align: right;
+}
+
+footer {
+    background-color: #FDEBD0;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+}

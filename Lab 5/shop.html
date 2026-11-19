@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Bookstore</title>
+
+    <link href="gttps://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="shop.css">
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Error 1 (shop.html, Lines 7): Incorecct rel atribute. "stylesheets" -->
+    <!-- Error 2 (shop.html, Line 10-12): Internal CSS inside the body instead of the head -->
+    <!-- Error 3 (shop.html, Line 13-17): Navigation missing nav element -->
+    <!-- Error 4 (shop.html, Line 18): Incorrect inline CSS syntax. "color:" -->
+    <!-- Error 5 (shop.html, Line 20): Table ID not match CSS ID -->
+    <!-- Error 6 (shop.html, Line 18-19): Header and Main missing -->
+    <!-- Error 7 (shop.css, Line 2): Incorrect font name. "Robotto" -->
+    <!-- Error 8 (shop.css, Line 4): Incorrect background-repeat. -->
+    <!-- Error 9 (shop.css, Line 18): Navigation link use display: inline instead of block -->
+    <!-- Error 10 (shop.css, Line 23): Incorrect Hover selector. Use li a:hover -->
+    <!-- Error 11 (shop.css, Line 27): Incorrect border-collapse value. Use collapse -->
+    <!-- Error 12 (shop.css, Line 34): Only second row selected instead of even rows -->
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks,stationery and more for every student.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="books">
+            <h2>Our Production</h2>
+
+            <p>
+                Welcome to Campus Bookstore! We provide quality
+                textbooks, stationery and gadjets at affordable
+                prices for all university students.
+            </p>
+
+            <!-- Product Table -->
+            <table id="products">
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price (RM)</th>
+                </tr>
+
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td>45.00</td>
+                </tr>
+
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td>6.50</td>
+                </tr>
+
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadjet</td>
+                    <td>25.00</td>
+                </tr>
+
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td>9.90</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+        <p>Contact: bookstore@campus.edu.my</p>
+</body>
+</html>
