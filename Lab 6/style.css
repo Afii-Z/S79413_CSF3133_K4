@@ -1,44 +1,38 @@
-
 /* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    margin: 20px;
+    background-color: #f4f6f9;
+    margin: 30px;
     color: #333;
 }
 
-/* Game Header */
-header {
-    background-color: #205375;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 15px;
+/* Page Heading */
+h2 {
+    color: #205375;
+    margin-bottom: 20px;
 }
 
-header h1 {
-    margin: 0;
-}
-
-header p {
-    margin-bottom: 0;
-}
-
-/* Section Styling */
-section {
+/* Form Styling */
+form {
     background-color: white;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
 }
 
 /* Input Styling */
 input {
     padding: 8px;
-    margin: 5px;
-    border: 1px solid #ccc;
+    margin-top: 5px;
+    border: 1px solid #aaa;
     border-radius: 4px;
+    width: 90%;
 }
 
 /* Button Styling */
@@ -49,7 +43,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 3px;
+    margin-top: 5px;
 }
 
 /* Button Hover Effect */
@@ -57,59 +51,43 @@ button:hover {
     background-color: #205375;
 }
 
-/* Game Images Layout */
-.game-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-/* Image Styling */
-.game-images img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #eee;
-}
-
 /* Result Styling */
 #result {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
-/* History Table Styling */
+/* Date and Time Styling */
+#checkTime {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Grade Table Styling */
 table {
-    width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    width: 350px;
+    margin-top: 15px;
+    background-color: white;
 }
 
+/* Table Header */
 th {
     background-color: #205375;
     color: white;
     padding: 10px;
+    border: 1px solid #ccc;
 }
 
+/* Table Data */
 td {
-    border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    border: 1px solid #ccc;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    color: #777;
-    font-size: 13px;
-    margin-top: 20px;
+/* Table Row Hover Effect */
+tr:hover {
+    background-color: #e8f1f7;
 }
