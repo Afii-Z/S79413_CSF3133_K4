@@ -1,0 +1,115 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 20px;
+    color: #333;
+}
+
+/* Game Header */
+header {
+    background-color: #205375;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Styling */
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+    background-color: #3282b8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #205375;
+}
+
+/* Game Images Layout */
+.game-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Image Styling */
+.game-images img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+/* Result Styling */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* History Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #205375;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 20px;
+}
