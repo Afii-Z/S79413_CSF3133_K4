@@ -1,49 +1,60 @@
-/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f9;
-    margin: 30px;
     color: #333;
+    margin: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Page Heading */
 h2 {
     color: #205375;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-/* Form Styling */
 form {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 350px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
-/* Label Styling */
 label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
-/* Input Styling */
 input {
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+    display: block;
     width: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px auto 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
 }
 
-/* Button Styling */
 button {
     background-color: #3282b8;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 5px;
+    margin: 5px;
+    font-size: 15px;
 }
 
 /* Button Hover Effect */
@@ -51,24 +62,30 @@ button:hover {
     background-color: #205375;
 }
 
-/* Result Styling */
 #result {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
     margin-top: 20px;
 }
 
-/* Date and Time Styling */
 #checkTime {
     font-size: 14px;
     color: #555;
+    text-align: center;
 }
 
-/* Grade Table Styling */
+#tableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 table {
     border-collapse: collapse;
     width: 350px;
-    margin-top: 15px;
+    max-width: 90%;
+    margin: 15px auto;
     background-color: white;
 }
 
@@ -76,13 +93,14 @@ table {
 th {
     background-color: #205375;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
+    text-align: center;
 }
 
 /* Table Data */
 td {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     border: 1px solid #ccc;
 }
@@ -90,4 +108,23 @@ td {
 /* Table Row Hover Effect */
 tr:hover {
     background-color: #e8f1f7;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        margin: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    button {
+        padding: 10px 12px;
+    }
 }
